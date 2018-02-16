@@ -13,3 +13,12 @@ listView('project-dummy') {
         buildButton()
     }
 }
+
+folder('folder1') {
+    displayName('Project A')
+    description('Folder for project A')
+}
+
+folder('folder1/testing') {
+    description('Folder containing all QA jobs for project A')
+}
