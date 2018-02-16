@@ -1,4 +1,4 @@
-job('seed-job') {
+job('seed_job') {
     logRotator(-1, 10)
     scm {
         github('the-it/jenkins_jobs', 'master')
@@ -9,7 +9,7 @@ job('seed-job') {
     steps {
         dsl {
             external('*.groovy')
-            external('*/*.groovy')
+            external('folder_1/*.groovy')
             removeAction('DISABLE')
         }
     }
