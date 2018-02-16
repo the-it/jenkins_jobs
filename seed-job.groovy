@@ -9,6 +9,7 @@ job('seed-job') {
     steps {
         dsl {
             external('*.groovy')
+            external('*/*.groovy')
             removeAction('DISABLE')
         }
     }
